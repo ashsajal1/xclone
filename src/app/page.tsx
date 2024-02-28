@@ -4,7 +4,7 @@ import { useState } from "react"
 export default function Home() {
   const [selectedItem, setSelectedItem] = useState<null | string>(null)
 
-  const items = ['For you', 'Trending', 'Sports', 'Programming', 'Politics'];
+  const [items, setItems] = useState<string[]>(['For you', 'Trending', 'Sports', 'Programming', 'Politics']);
 
   const handleChange = (item: string) => {
     setSelectedItem(item)
