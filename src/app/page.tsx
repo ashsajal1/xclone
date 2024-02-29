@@ -1,5 +1,6 @@
 'use client';
 import LeftSideBar from "@/components/left-sidebar";
+import RightSidebar from "@/components/right-sidebar";
 import { useState } from "react"
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
   }
   return (
     <>
-      <div className="flex items-start">
+      <main className="flex items-start">
         <LeftSideBar />
         <nav>
           <div className='h-[50px] border-b border-slate-500 flex items-center gap-2'>
@@ -24,7 +25,9 @@ export default function Home() {
             ))}
           </div>
         </nav>
-      </div>
+
+        <RightSidebar />
+      </main>
     </>
   )
 }
