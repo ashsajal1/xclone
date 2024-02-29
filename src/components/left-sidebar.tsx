@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function LeftSideBar() {
   const [selectedItem, setSelectedItem] = useState('Home');
-  
+
   const handleSelectItem = (currentItem: string) => {
     setSelectedItem(currentItem)
   }
@@ -16,7 +16,8 @@ export default function LeftSideBar() {
       </div>
       <div>
         {navItems.map(nav => (
-          <div key={nav.name} onClick={() => handleSelectItem(nav.name)} className='p-2 cursor-pointer flex items-center justify-start w-full hover:bg-slate-500 rounded gap-1'>
+          <div className="mx-4" key={nav.name}>
+            <div onClick={() => handleSelectItem(nav.name)} className='p-2 cursor-pointer flex items-center justify-start w-full hover:bg-slate-500 rounded gap-1'>
             {/* <HomeIcon className='h-5 w-5' />
             <HomeIconSolid className='h-5 w-5' /> */}
             {selectedItem === nav.name ? (
@@ -26,6 +27,8 @@ export default function LeftSideBar() {
             )}
             <span>{nav.name}</span>
           </div>
+          </div>
+
         ))}
 
         {/* <div className='p-2 cursor-pointer flex items-center justify-center w-full hover:bg-slate-500 rounded gap-1'>
