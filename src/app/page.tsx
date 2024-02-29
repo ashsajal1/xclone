@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <main className="flex items-start">
         <LeftSideBar />
-        <nav>
+        <nav className="w-full">
           <div className='h-[50px] border-b border-slate-500 flex items-center gap-2'>
             {items.map((item) => (
               <div onClick={() => handleChange(item)} key={item} className='text-gray-400 hover:text-gray-200 cursor-pointer select-none text-center flex flex-col gap-2 items-center justify-between text-sm h-full hover:bg-gray-800 px-2'>

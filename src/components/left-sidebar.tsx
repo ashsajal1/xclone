@@ -10,8 +10,8 @@ export default function LeftSideBar() {
   }
 
   return (
-    <div className='md:w-[250px] border-r h-screen border-slate-500'>
-      <div className='w-full items-center flex justify-center p-4 text-blue-600 font-bold text-xl select-none'>
+    <div className='md:w-1/3 border-r h-screen border-slate-500'>
+      <div className='md:w-full items-center flex justify-center p-4 text-blue-600 font-bold text-xl select-none'>
         xClone
       </div>
       <div>
