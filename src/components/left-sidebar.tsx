@@ -1,6 +1,7 @@
 import navItems from "../utils/navItems";
 
 import { useState } from 'react';
+import { ModeToggle } from "./theme-toggler";
 
 export default function LeftSideBar() {
   const [selectedItem, setSelectedItem] = useState('Home');
@@ -18,25 +19,20 @@ export default function LeftSideBar() {
         {navItems.map(nav => (
           <div className="mx-4" key={nav.name}>
             <div onClick={() => handleSelectItem(nav.name)} className='p-2 cursor-pointer flex items-center justify-start w-full hover:bg-slate-500 rounded gap-1'>
-            {/* <HomeIcon className='h-5 w-5' />
-            <HomeIconSolid className='h-5 w-5' /> */}
-            {selectedItem === nav.name ? (
-              <>{nav.solidIcon}</>
-            ) : (
-              <>{nav.outlineIcon}</>
-            )}
-            <span>{nav.name}</span>
-          </div>
+              {selectedItem === nav.name ? (
+                <>{nav.solidIcon}</>
+              ) : (
+                <>{nav.outlineIcon}</>
+              )}
+              <span>{nav.name}</span>
+            </div>
+
+
           </div>
 
         ))}
 
-        {/* <div className='p-2 cursor-pointer flex items-center justify-center w-full hover:bg-slate-500 rounded gap-1'>
-          <HomeIcon className='h-5 w-5' />
-          <HomeIconSolid className='h-5 w-5' />
-          <span>Home</span>
-        </div> */}
-
+        <ModeToggle />
       </div>
     </div >
   );
