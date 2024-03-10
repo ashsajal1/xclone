@@ -15,7 +15,7 @@ export default function RightSidebar() {
     }
 
     return (
-        <div className='p-3 md:w-1/3 border-l border-slate-400 h-screen'>
+        <div className='hidden md:block p-3 md:w-1/3 border-l border-slate-400 h-screen'>
             <div className="p-2 rounded bg-slate-600 text-sm focus-within:ring-1 focus-within:ring-blue-600 gap-2 flex items-center justify-between focus-within:bg-gray-900">
                 <MagnifyingGlassIcon className={`h-5 w-5 ${isFocused ? 'text-blue-600' : ''}`} />
 
