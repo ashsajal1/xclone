@@ -38,6 +38,8 @@ export default function RightSidebar() {
                     <TrendingTopic />
                     <TrendingTopic />
                     <TrendingTopic />
+
+                    <div className='font-light text-blue-500'>Show more</div>
                 </div>
             </div>
         </div>
