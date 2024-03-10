@@ -22,6 +22,10 @@ export default function Home() {
                 <span className={`mt-4 ${selectedItem === item ? 'font-bold text-gray-900 dark:text-slate-50' : ''}`}>{item}</span>
                 <div className={`h-[4px] w-full bg-blue-600 rounded-full ${selectedItem === item ? '' : 'hidden'}`}></div>
               </div>
+
+
+
+
             ))}
           </div>
         </nav>
