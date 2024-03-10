@@ -44,7 +44,7 @@ export default function RightSidebar() {
                 </div>
             </div>
 
-            <div className='flex flex-col border dark:border-none p-2 rounded text-sm mt-3'>
+            <div className='flex flex-col border dark:border-none p-2 rounded text-sm mt-3 dark:bg-slate-600'>
                 <h3 className='font-bold mb-2'>Who to follow</h3>
                 <UserCard />
                 <UserCard />

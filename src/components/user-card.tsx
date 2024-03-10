@@ -4,7 +4,7 @@ export default function UserCard() {
     return (
         <div className='flex items-center justify-between'>
             <div className='flex items-center gap-2'>
-                <div className='h-[30px] w-[30px] bg-gray-600 rounded-full'></div>
+                <div className='h-[30px] w-[30px] bg-gray-600 dark:bg-slate-200 rounded-full'></div>
 
                 <div className='flex flex-col'>
                     <p>Super hero</p>
