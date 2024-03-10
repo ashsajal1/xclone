@@ -18,7 +18,7 @@ export default function LeftSideBar() {
       <div>
         {navItems.map(nav => (
           <div className="mx-4" key={nav.name}>
-            <div onClick={() => handleSelectItem(nav.name)} className={`p-2 cursor-pointer flex items-center w-full hover:bg-slate-500 rounded gap-1 justify-center md:justify-start`}>
+            <div onClick={() => handleSelectItem(nav.name)} className={`p-2 cursor-pointer flex items-center w-full hover:bg-gray-200 rounded gap-1 justify-center md:justify-start`}>
               {selectedItem === nav.name ? (
                 <>{nav.solidIcon}</>
               ) : (
