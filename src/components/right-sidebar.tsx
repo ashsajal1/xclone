@@ -1,6 +1,7 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react';
 import TrendingTopic from './trending-topics';
+import UserCard from './user-card';
 
 export default function RightSidebar() {
     const [isFocused, setFocused] = useState(false);
@@ -41,6 +42,14 @@ export default function RightSidebar() {
 
                     <div className='font-light text-blue-500'>Show more</div>
                 </div>
+            </div>
+
+            <div className='flex flex-col border dark:border-none p-2 rounded text-sm mt-3'>
+                <h3 className='font-bold mb-2'>Who to follow</h3>
+                <UserCard />
+                <UserCard />
+                <UserCard />
+                
             </div>
         </div>
     )
