@@ -12,7 +12,8 @@ export default function UserCard() {
                 </div>
             </div>
 
-            <button className='bg-gray-900 hover:bg-gray-950 p-1 text-sm rounded text-slate-50'>Follow</button>
+                <button className='bg-gray-900 hover:bg-gray-950 p-1 text-sm rounded text-slate-50 dark:text-gray-900 dark:bg-slate-50 dark:hover:bg-slate-100'>Follow</button>
+                
         </div>
     )
 }
