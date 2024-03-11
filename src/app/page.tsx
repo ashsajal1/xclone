@@ -1,5 +1,6 @@
 'use client';
 import LeftSideBar from "@/components/left-sidebar";
+import Post from "@/components/post";
 import RightSidebar from "@/components/right-sidebar";
 import WritePost from "@/components/write-post";
 import { useState } from "react"
@@ -26,6 +27,7 @@ export default function Home() {
             ))}
           </div>
           <WritePost />
+          <Post />
         </nav>
         <RightSidebar />
       </main>
