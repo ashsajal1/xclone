@@ -2,6 +2,7 @@ import navItems from "../utils/navItems";
 
 import { useState } from 'react';
 import { ModeToggle } from "./theme-toggler";
+import SwitchButton from "./switch-button";
 
 export default function LeftSideBar() {
   const [selectedItem, setSelectedItem] = useState('Home');
@@ -30,6 +31,7 @@ export default function LeftSideBar() {
         ))}
 
         <ModeToggle />
+        <SwitchButton />
       </div>
     </div >
   );
