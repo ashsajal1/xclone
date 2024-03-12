@@ -1,7 +1,6 @@
 import navItems from "../utils/navItems";
 
 import { useState } from 'react';
-import { ModeToggle } from "./theme-toggler";
 import SwitchButton from "./switch-button";
 
 export default function LeftSideBar() {
@@ -16,7 +15,7 @@ export default function LeftSideBar() {
       <div className='md:w-full items-center flex justify-center p-4 text-blue-600 font-bold text-xl select-none'>
         xClone
       </div>
-      <div>
+      <div className="flex flex-col">
         {navItems.map(nav => (
           <div className="mx-4" key={nav.name}>
             <div onClick={() => handleSelectItem(nav.name)} className={`p-2 cursor-pointer flex items-center w-full hover:bg-gray-200 rounded gap-1 justify-center md:justify-start`}>
@@ -30,8 +29,9 @@ export default function LeftSideBar() {
           </div>
         ))}
 
-        <ModeToggle />
-        <SwitchButton />
+        <div className="absolute bottom-4 left-4">
+          <SwitchButton />
+        </div>
       </div>
     </div >
   );
