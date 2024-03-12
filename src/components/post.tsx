@@ -24,11 +24,11 @@ export default function Post() {
                     </div>
 
                     <div className='flex items-center justify-between p-2 border-y'>
-                        <HeartIcon className='text-red-600 h-4 w-4' />
-                        <ChatBubbleBottomCenterIcon className='text-blue-600 h-4 w-4' />
-                        <ArrowPathIcon className='text-green-600 h-4 w-4' />
-                        <BookmarkIcon className='text-gray-600 h-4 w-4' />
-                        <ShareIcon className='text-gray-600 h-4 w-4' />
+                        <HeartIcon className='text-gray-600 hover:text-red-600 h-4 w-4' />
+                        <ChatBubbleBottomCenterIcon className='text-gray-600 hover:text-blue-600 h-4 w-4' />
+                        <ArrowPathIcon className='text-gray-600 hover:text-green-600 h-4 w-4' />
+                        <BookmarkIcon className='text-gray-600 hover:text-blue-600 h-4 w-4' />
+                        <ShareIcon className='text-gray-600 hover:text-blue-600 h-4 w-4' />
                     </div>
                 </div>
 
