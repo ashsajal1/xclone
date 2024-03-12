@@ -28,6 +28,10 @@ export default function Home() {
           </div>
           <WritePost />
           <Post />
+          <Post />
+          <Post />
+          <Post />
+          <Post />
         </nav>
         <RightSidebar />
       </main>
