@@ -1,4 +1,5 @@
 'use client';
+import BottomBar from "@/components/bottom-bar";
 import LeftSideBar from "@/components/left-sidebar";
 import Post from "@/components/post";
 import RightSidebar from "@/components/right-sidebar";
@@ -32,6 +33,7 @@ export default function Home() {
           <Post />
           <Post />
           <Post />
+          <BottomBar />
         </nav>
         <RightSidebar />
       </main>
